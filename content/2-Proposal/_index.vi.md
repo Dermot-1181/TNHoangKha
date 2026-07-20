@@ -3,7 +3,7 @@ title: "Bản đề xuất"
 date: 2026-07-10
 weight: 2
 chapter: false
-pre: " **2.** "
+pre: " <b>2.</b> "
 ---
 
 # Bản đề xuất — Dự án HireFlow AI

@@ -3,7 +3,7 @@ title : "Lambda GetPresignedUrl — generate S3 upload URL"
 date : 2026-07-10 
 weight : 2
 chapter : false
-pre : " **5.3.2** "
+pre : " <b>5.3.2</b> "
 ---
 
 

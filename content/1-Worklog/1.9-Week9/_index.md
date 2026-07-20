@@ -3,7 +3,7 @@ title: "Week 9 Worklog"
 date: 2026-06-15
 weight: 1
 chapter: false
-pre: " **1.9.** "
+pre: " <b>1.9.</b> "
 ---
 
 ### Week 9 Objectives:

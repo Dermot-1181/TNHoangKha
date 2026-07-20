@@ -4,7 +4,7 @@ title: "Week 1: Onboarding & IAM Basics"
 date: 2026-04-20
 weight: 1 
 chapter: false 
-pre: " **1.1.** "
+pre: " <b>1.1.</b> "
 ---
 
 ### Week 1 Objectives:

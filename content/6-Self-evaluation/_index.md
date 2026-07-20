@@ -4,7 +4,7 @@ title: "Self-Assessment"
 date: 2026-07-10
 weight: 6
 chapter: false
-pre: " **6.** "
+pre: " <b>6.</b> "
 ---
 
 

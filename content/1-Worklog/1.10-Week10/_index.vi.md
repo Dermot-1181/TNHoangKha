@@ -3,7 +3,7 @@ title: "Worklog Tuần 10"
 date: 2026-06-22
 weight: 2
 chapter: false
-pre: " **1.10.** "
+pre: " <b>1.10.</b> "
 ---
 
 ### Mục tiêu tuần 10:

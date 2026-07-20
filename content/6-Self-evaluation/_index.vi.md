@@ -4,7 +4,7 @@ title: "Tự đánh giá"
 date: 2026-07-10
 weight: 6
 chapter: false
-pre: " **6.** "
+pre: " <b>6.</b> "
 ---
 
 Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Việt Nam** từ **17/04/2026** đến ngày **10/07/2026** (12 tuần), tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  

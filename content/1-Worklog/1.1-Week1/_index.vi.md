@@ -4,7 +4,7 @@ title: "Worklog Tuần 1"
 date: 2026-04-20
 weight: 1
 chapter: false
-pre: " **1.1.** "
+pre: " <b>1.1.</b> "
 ---
 
 ### Mục tiêu tuần 1:

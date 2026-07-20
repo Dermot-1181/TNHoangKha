@@ -3,7 +3,7 @@ title: "Week 6 Worklog"
 date: 2026-05-25
 weight: 1
 chapter: false
-pre: " **1.6.** "
+pre: " <b>1.6.</b> "
 ---
 
 ### Week 6 Objectives:

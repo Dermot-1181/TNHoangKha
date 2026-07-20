@@ -4,7 +4,7 @@ title: "Week 7 Worklog"
 date: 2026-06-01
 weight: 1
 chapter: false
-pre: " **1.7.** "
+pre: " <b>1.7.</b> "
 
 ---
 ### Week 7 Objectives:
