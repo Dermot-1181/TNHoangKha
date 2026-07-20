@@ -1,12 +1,10 @@
 ---
-
 title: "Worklog Tuần 5"
-
-## date: 2026-05-18
-
+date: 2026-05-18
 weight: 1
 chapter: false
 pre: " **1.5.** "
+---
 
 ### Mục tiêu tuần 5:
 

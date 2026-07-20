@@ -1,11 +1,10 @@
 ---
-
-## title: "Worklog Tuần 12"
-
+title: "Worklog Tuần 12"
 date: 2026-07-06
 weight: 2
 chapter: false
 pre: " **1.12** "
+---
 
 ### Mục tiêu tuần 12:
 

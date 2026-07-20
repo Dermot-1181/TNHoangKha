@@ -1,11 +1,10 @@
 ---
-
-## title: "Week 8 Worklog"
-
+title: "Week 8 Worklog"
 date: 2026-06-08
 weight: 1
 chapter: false
 pre: " **1.8.** "
+---
 
 ### Week 8 Objectives:
 

@@ -1,11 +1,10 @@
 ---
-
-## title: "Blog 1"
-
+title: "Blog 1"
 date: 2026-07-10
 weight: 1
 chapter: false
 pre: " **3.1.** "
+---
 
 # Blog 1 - Mình vừa nghịch Kiro được 2 tuần – kể bạn nghe cho vui
 

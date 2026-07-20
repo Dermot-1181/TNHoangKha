@@ -1,10 +1,10 @@
 ---
-
-## title: "Week 3 Worklog"
+title: "Week 3 Worklog"
 date: 2026-05-04
 weight: 1
 chapter: false
 pre: " **1.3.** "
+---
 
 ### Week 3 Objectives:
 
