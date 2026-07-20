@@ -1,6 +1,6 @@
 ---
 
-title: "Week 1: Onboarding & IAM Basics"
+title: "Week 1 Worklog"
 date: 2026-04-20
 weight: 1 
 chapter: false 
