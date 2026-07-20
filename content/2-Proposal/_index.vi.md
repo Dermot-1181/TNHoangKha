@@ -1,11 +1,10 @@
 ---
-
-## title: "Bản đề xuất"
-
+title: "Bản đề xuất"
 date: 2026-07-10
 weight: 2
 chapter: false
 pre: " **2.** "
+---
 
 # Bản đề xuất — Dự án HireFlow AI
 
