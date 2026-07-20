@@ -1,47 +1,46 @@
 ---
 title: "Sharing and Feedback"
-date: 2024-01-01
+date: 2026-07-10
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-> Here, you can freely share your personal opinions about your experience participating in the First Cloud AI Journey program. This will help the FCAJ team improve any shortcomings based on the following aspects:
+
 
 ### Overall Evaluation
 
 **1. Working Environment**  
-The working environment is very friendly and open. FCAJ members are always willing to help whenever I encounter difficulties, even outside working hours. The workspace is tidy and comfortable, helping me focus better. However, I think it would be nice to have more social gatherings or team bonding activities to strengthen relationships.
+The work environment is friendly and open. The members of FCAJ are always ready to support me when I encounter difficulties. The workspace is comfortable and clean, which helps me concentrate better.
 
 **2. Support from Mentor / Team Admin**  
-The mentor provides very detailed guidance, explains clearly when I don’t understand, and always encourages me to ask questions. The admin team supports administrative tasks, provides necessary documents, and creates favorable conditions for me to work effectively. I especially appreciate that the mentor allows me to try and solve problems myself instead of just giving the answer.
+The mentor provided thorough guidance, clearly explaining things I didn't understand and always encouraging me to ask questions and do my own research before asking. The admin team provided excellent support with procedures and documents throughout my internship.
 
 **3. Relevance of Work to Academic Major**  
-The tasks I was assigned align well with the knowledge I learned at university, while also introducing me to new areas I had never encountered before. This allowed me to both strengthen my foundational knowledge and gain practical skills.
+It was a bit overwhelming because I'm majoring in cybersecurity and didn't have any knowledge of AWS, but gradually, thanks to the enthusiastic guidance from the admins, I got used to it.
 
 **4. Learning & Skill Development Opportunities**  
-During the internship, I learned many new skills such as using project management tools, teamwork skills, and professional communication in a corporate environment. The mentor also shared valuable real-world experiences that helped me better plan my career path.
+During my internship, I learned many new skills, both technical (AWS Serverless, Git, Hugo) and soft skills (report writing, communication, teamwork). My mentor also shared many useful practical experiences that will be helpful for my future career path.
 
 **5. Company Culture & Team Spirit**  
-The company culture is very positive: everyone respects each other, works seriously but still keeps things enjoyable. When there are urgent projects, everyone works together and supports one another regardless of their position. This made me feel like a real part of the team, even as an intern.
+The work culture is positive; everyone respects and supports each other, even when work is urgent. I feel like I'm considered part of a team, not just an intern.
 
 **6. Internship Policies / Benefits**  
-The company provides an internship allowance and offers flexible working hours when needed. In addition, having the opportunity to join internal training sessions is a big plus.
+Attending these events and listening to the speakers was really helpful for me.
 
 ---
 
 ### Additional Questions
-- What did you find **most satisfying** during your internship?  
-- What do you think the company **should improve** for future interns?  
-- If recommending to a friend, would you **suggest they intern here**? Why or why not?  
+- What did you find **most satisfying** during your internship?  We have dedicated admin team members who are very supportive, and we've had access to a lot of new knowledge.
+- What do you think the company **should improve** for future interns?  The problem is getting in and out of the restroom.
+- If recommending to a friend, would you **suggest they intern here**? Why or why not?  Absolutely, because we have a super boss here, Hung, who is great to us chickens, a super enthusiastic admin team, and most importantly, a vibrant community like this.
 
 ---
 
 ### Suggestions & Expectations
-- Do you have any suggestions to improve the internship experience?  
-- Would you like to continue this program in the future?  
-- Any other comments (free sharing):
+
+I hope to continue my involvement with the program or return to work with the FCAJ team if a suitable opportunity arises in the future.
+
+**Other feedback (feel free to share):**
+I would like to thank the FCAJ team and my mentor for providing the opportunity and enthusiastic support throughout my internship. This was a very valuable experience that helped me grow both technically and professionally.

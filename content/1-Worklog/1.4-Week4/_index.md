@@ -1,57 +1,31 @@
 ---
-title: "Week 4 Worklog"
-date: 2024-01-01
+
+## title: "Week 4 Worklog"
+date: 2026-05-11
 weight: 1
 chapter: false
-pre: " <b> 1.4. </b> "
----
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
+pre: " **1.4.** "
 
 ### Week 4 Objectives:
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+- Master Amazon S3 and IAM Permission Boundaries — core knowledge required for the application's upload workflow and security.
+- Successfully deploy the AWS SAM template skeleton containing all infrastructure resources.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Day | Task                                                                                                                                                                                                                                              | Start Date | Completion Date | Reference Material                                                                                                                                                                                                                          |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | Learn Amazon S3 in depth: storage classes, versioning, lifecycle policies, bucket policies, and static website hosting. Complete the S3 lab: create buckets, upload objects, and configure static hosting.                                        | 11/05/2026 | 11/05/2026      | [hSTART WITH AMAZON S3 :: Start with Amazon S3](https://000009.awsstudygroup.com/) [Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)                                                                           |
+| 3   | **Advanced S3:** • Focus on CORS, Presigned URLs (generated via `boto3` SigV4), and SSE-KMS encryption. • Complete the S3 Storage Performance lab: prefix partitioning and throughput optimization.                                           | 12/05/2026 | 12/05/2026      | [Storage Performance Lab :: STORAGE PERFORMANCE LAB](https://000068.awsstudygroup.com/) [Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)                                                                      |
+| 4   | Complete the IAM Permission Boundary lab: practice enforcing the maximum allowable permissions for an IAM user/role. Design least-privilege IAM roles tailored for each Lambda function in the project.                                           | 13/05/2026 | 13/05/2026      | [hLIMITATION OF USER RIGHTS WITH IAM PERMISSION BOUNDARY :: LIMITATION OF USER RIGHTS WITH IAM PERMISSION BOUNDARY](https://000011.awsstudygroup.com/) [AWS Identity and Access Management Documentation](https://docs.aws.amazon.com/iam/) |
+| 5   | Learn AWS SAM: focus on `template.yaml` Globals and Lambda execution roles. Write the SAM template skeleton: S3 buckets, DynamoDB tables, SQS queues (`ScoreQueue` + `SaveQueue` + DLQs), KMS keys, SNS topics, and placeholder Lambda functions. | 14/05/2026 | 14/05/2026      | [AWS Serverless Application Model (AWS SAM) Documentation](https://docs.aws.amazon.com/serverless-application-model/)                                                                                                                       |
+
+
 
 
 ### Week 4 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+- Successfully deployed the SAM skeleton: S3, DynamoDB, SQS, SNS, and KMS resources were all created accurately.
+- Gained a deep understanding of S3 CORS and Presigned URLs — knowledge that applies directly to the implementation of the project.
 
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

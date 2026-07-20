@@ -1,59 +1,34 @@
 ---
+
 title: "Worklog Tuần 5"
-date: 2024-01-01
+
+## date: 2026-05-18
+
 weight: 1
 chapter: false
-pre: " <b> 1.5. </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+pre: " **1.5.** "
 
 ### Mục tiêu tuần 5:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Hiểu Lambda execution model, cold start, cách tích hợp với API Gateway
+- Hoàn thiện toàn bộ infrastructure: CORS, lifecycle, KMS, Secrets Manager, EventBridge sẵn sàng cho implement
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Thứ | Công việc                                                                                                                                                                                                                                                        | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                                                                                                                           |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | Học Lambda chi tiết: runtime Python 3.12, cold start, execution role, environment variables, CloudWatch Logs. Viết Lambda đầu tiên + tích hợp API Gateway REST endpoint                                                                                          | 18/05/2026   | 18/05/2026      | [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/) [Amazon API Gateway Documentation](https://docs.aws.amazon.com/apigateway/)                                                                                                              |
+| 3   | Làm lab Serverless với AWS SAM: deploy Lambda + API Gateway hoàn chỉnh, hiểu flow `sam build` → `sam deploy` → test. Cấu hình S3 CORS Quarantine bucket và S3 lifecycle policies cho project                                                                     | 19/05/2026   | 19/05/2026      | [Serverless - Deploying applications with SAM :: SERVERLESS - DEPLOYING APPLICATIONS WITH SAM](https://000080.awsstudygroup.com/)[Amazon API Gateway Documentation](https://docs.aws.amazon.com/apigateway/)                                            |
+| 4   | Làm lab Amazon Macie: tạo job scan S3 phát hiện PII, xem findings. Cấu hình Secrets Manager secret `hireflow/gemini-api-key`. Lambda đọc key khi cold start, cache cho warm invocation                                                                           | 20/05/2026   | 20/05/2026      | [Discover sensitive data present in S3 bucket using Amazon Macie :: Discover sensitive data present in S3 bucket using Amazon Macie](https://000090.awsstudygroup.com/)[AWS Secrets Manager Documentation](https://docs.aws.amazon.com/secretsmanager/) |
+| 6   | Tinh chỉnh EventBridge rule `hireflow-quarantine-upload`: event pattern S3 ObjectCreated prefix `web/`. Hiểu lý do tạo ngoài SAM (circular dependency S3 ↔ Lambda Permission). Review toàn bộ SAM template, chuẩn hóa naming `hireflow-*`, verify KMS encryption | 22/05/2026   | 22/05/2026      | [Amazon EventBridge Documentation](https://docs.aws.amazon.com/eventbridge/)                                                                                                                                                                             |
+
+
 
 
 ### Kết quả đạt được tuần 5:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- SAM template hoàn thiện: CORS, lifecycle, KMS, Secrets Manager, EventBridge đều đúng
+- Hiểu Lambda execution model và cách tối ưu cold start
+- Infrastructure hoàn chỉnh, sẵn sàng bắt đầu implement
 

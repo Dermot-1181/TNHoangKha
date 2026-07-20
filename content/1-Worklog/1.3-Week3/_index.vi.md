@@ -1,59 +1,32 @@
 ---
+
 title: "Worklog Tuần 3"
-date: 2024-01-01
+date: 2026-05-04
 weight: 1
 chapter: false
-pre: " <b> 1.3. </b> "
+pre: " **1.3.** "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Biết cách quản lý và kiểm soát chi phí sử dụng dịch vụ AWS.
+- Nắm được cách giám sát tài nguyên, log và cấu hình cảnh báo với Amazon CloudWatch.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Thứ | Công việc                                                                                                                                                               | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                                                                                                             |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 2   | Học Amazon VPC: CIDR, Subnet public/private, Route Table, Internet Gateway, NAT Gateway. Làm lab VPC + Site-to-Site VPN                                                 | 04/05/2026   | 04/05/2026      | [Amazon VPC and AWS Site-to-Site VPN Workshop :: Start with Amazon VPC and AWS VPN Site-to-Site.](https://000003.awsstudygroup.com/)                                                                                                       |
+| 3   | Làm lab Deploy Application on Docker Container: tạo Dockerfile, build image, chạy container, đẩy lên ECR. Hiểu container vs serverless                                  | 05/05/2026   | 05/05/2026      | [Deploy Application on Docker :: DEPLOY APPLICATION ON DOCKER CONTAINER](https://000015.awsstudygroup.com/)[Amazon Elastic Container Registry Documentation](https://docs.aws.amazon.com/ecr/)                                            |
+| 4   | Làm lab Deploy Applications on Amazon ECS: ECS Cluster, Task Definition, Service, ALB. Hiểu tại sao project HireFlow dùng Lambda thay vì ECS (cost + scale per-request) | 06/05/2026   | 06/05/2026      | [Deploy applications on Amazon Elastic Container Service :: DEPLOY APPLICATIONS ON AMAZON ELASTIC CONTAINER SERVICE](https://000016.awsstudygroup.com/)[Amazon Elastic Container Service Documentation](https://docs.aws.amazon.com/ecs/) |
+
+
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Hiểu và triển khai được mô hình mạng VPC an toàn (public/private subnet) kết hợp Site-to-Site VPN
+- Nắm được quy trình containerize ứng dụng: Dockerfile → image → ECR → chạy trên ECS (Cluster, Task Definition, Service, ALB)
 

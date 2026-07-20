@@ -1,59 +1,32 @@
 ---
-title: "Worklog Tuần 9"
-date: 2024-01-01
+
+## title: "Worklog Tuần 9"
+
+date: 2026-06-15
 weight: 1
 chapter: false
-pre: " <b> 1.9. </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+pre: " **1.9.** "
 
 ### Mục tiêu tuần 9:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Hoàn thành Lambda SaveAndNotify: lưu kết quả DB + gửi email SES cho ứng viên
+- Kiểm thử pipeline end-to-end lần đầu với CV thật, đảm bảo toàn bộ chạy đúng < 3 phút
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Thứ | Công việc                                                                                                                                                                                | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                       |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | Học Amazon SES: verify email sandbox, gửi test email HTML + plain text boto3. Tìm hiểu sending limits, bounce handling. Implement Lambda `save_notify`: `UpdateItem` DynamoDB idempotent | 15/06/2026   | 15/06/2026      | [Amazon Simple Email Service Documentation](https://docs.aws.amazon.com/ses/)[Amazon DynamoDB Documentation](https://docs.aws.amazon.com/dynamodb/) |
+| 4   | Implement SES email xác nhận cho ứng viên. SNS alert HR khi confidence=`low` hoặc có flags. Test pipeline Score → Save: verify DynamoDB record, email inbox, SNS alert đúng điều kiện    | 17s/06/2026  | 17/06/2026      |                                                                                                                                                      |
+| 6   | Test pipeline end-to-end: upload CV thật → FileValidator → Extract → Score → Save&Notify → email. Đo thời gian xử lý < 3 phút/CV, test song song 3 CV, verify không race condition       | 19/06/2026   | 19/06/2026      |                                                                                                                                                      |
+
+
 
 
 ### Kết quả đạt được tuần 9:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Core pipeline end-to-end: upload → score → email < 3 phút
+- DynamoDB record đầy đủ, email ứng viên và SNS HR đều đúng
+- Không race condition khi xử lý nhiều CV cùng lúc
 

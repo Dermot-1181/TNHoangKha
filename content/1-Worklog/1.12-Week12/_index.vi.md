@@ -1,58 +1,33 @@
 ---
-title: "Worklog Tuần 12"
-date: 2024-01-01
+
+## title: "Worklog Tuần 12"
+
+date: 2026-07-06
 weight: 2
 chapter: false
-pre: " <b> 1.12 </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+pre: " **1.12** "
 
 ### Mục tiêu tuần 12:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Deploy toàn bộ hệ thống lên production, verify hoạt động đúng trên môi trường thật
+- Hoàn thiện và nộp báo cáo thực tập đầy đủ
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Thứ | Công việc                                                                                                                                                            | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                               |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | -------------------------------------------- |
+| 2   | Deploy Candidate App: `npm run build`, sync S3 `hireflow-candidate-226593872610`, cache-control immutable JS/CSS + no-cache index.html, CloudFront invalidation `/*` | 06/07/2026   | 06/07/2026      |                                              |
+| 3   | Deploy HR Dashboard S3 + CloudFront production. Test toàn bộ production URL: CORS, presigned URL, email, SNS đều hoạt động đúng                                      | 07/07/2026   | 07/07/2026      |  |
+| 4   | Viết Workshop, Candidate Upload Flow, đối chiếu architecture diagram. Viết self-evaluation tổng kết 12 tuần                                                          | 08/07/2026   | 08/07/2026      |                                              |
+| 5   | Nộp báo cáo thực tập đầy đủ. Tổng kết chương trình Workforce Bootcamp                                                                                                | 09/07/2026   | 09/07/2026      |                                              |
+
+
 
 
 ### Kết quả đạt được tuần 12:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- HireFlow AI deploy production hoàn chỉnh, chạy ổn định
+- Báo cáo đầy đủ: worklog, proposal, workshop, self-evaluation
+- Hoàn thành chương trình Workforce Bootcamp — First Cloud AI Journey
 

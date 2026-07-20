@@ -1,59 +1,34 @@
 ---
+
 title: "Worklog Tuần 2"
-date: 2024-01-01
-weight: 1
-chapter: false
-pre: " <b> 1.2. </b> "
+date: 2026-04-27  
+weight: 1  
+chapter: false  
+pre: " **1.2.** "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 2:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Làm quen với EC2 — dịch vụ compute nền tảng của AWS
+- Hoàn thành architecture diagram và sequence diagram cho toàn bộ hệ thống HireFlow AI
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Thứ | Công việc                                                                                                                                                          | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                               |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------------- | -------------------------------------------------------------------------------------------- |
+| 2   | Làm lab EC2 đầu tiên: launch t2.micro Ubuntu 22.04, tạo key pair `.pem`, cấu hình Security Group chỉ mở port 22, SSH thành công, cài Nginx, đặt Budget alert 1 USD | 27/04/2026   | 27/04/2026      | [Giới thiệu về Amazon EC2 :: GIỚI THIỆU VỀ AMAZON EC2](https://000004.awsstudygroup.com/vi/) |
+| 3   | - Triển khai ứng dụng với Auto Scaling: - Chuẩn bị EC2, tạo AMI & Launch Template - Tạo Target Group, cấu hình Load Balancer - Kết nối ứng dụng với RDS            | 28/04/2026   | 28/04/2026      | [https://000006.awsstudygroup.com/](https://000006.awsstudygroup.com/)                       |
+| 4   | **-** Auto Scaling nâng cao: - Kiểm thử ứng dụng qua Load Balancer - Cấu hình Dynamic Scaling / Scheduled Scaling - Test tải và quan sát Auto Scaling hoạt động    | 29/04/2026   | 29/04/2026      | [https://000006.awsstudygroup.com/](https://000006.awsstudygroup.com/)                       |
+
+
 
 
 ### Kết quả đạt được tuần 2:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- Hiểu và triển khai được Amazon RDS: tạo DB instance, cấu hình Security Group, kết nối ứng dụng tới database.
+- Biết cách đóng gói ứng dụng qua AMI/Launch Template và triển khai Load Balancer để phân phối traffic.
+- Cấu hình được Auto Scaling Group, hiểu các chiến lược scaling (dynamic/scheduled) và kiểm thử khả năng tự mở rộng của hệ thống.
+- Nắm được quy trình dọn dẹp tài nguyên để tránh phát sinh chi phí ngoài ý muốn.
 

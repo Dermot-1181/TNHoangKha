@@ -1,59 +1,30 @@
 ---
-title: "Worklog Tuần 4"
-date: 2024-01-01
+
+## title: "Worklog Tuần 4"
+
+date: 2026-05-11
 weight: 1
 chapter: false
-pre: " <b> 1.4. </b> "
----
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
+pre: " **1.4.** "
 
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- Nắm vững S3, IAM Permission Boundary — kiến thức cốt lõi cho upload flow và bảo mật
+- Deploy được SAM template skeleton với đầy đủ infrastructure resources
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+
+| Thứ | Công việc                                                                                                                                                                                                           | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                                                                                                                                                                                                                              |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2   | Học Amazon S3 chi tiết: storage classes, versioning, lifecycle policy, bucket policy, static website hosting. Làm lab S3: tạo bucket, upload object, static hosting                                                 | 11/05/2026   | 11/05/2026      | [hSTART WITH AMAZON S3 :: Start with Amazon S3](https://000009.awsstudygroup.com/)[Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)                                                                           |
+| 3   | S3 nâng cao: CORS, Presigned URL (generate bằng boto3 SigV4), SSE-KMS encryption. Làm lab S3 Storage Performance: prefix partitioning, throughput optimization                                                      | 12/05/2026   | 12/05/2026      | [Storage Performance Lab :: STORAGE PERFORMANCE LAB](https://000068.awsstudygroup.com/)[Amazon Simple Storage Service Documentation](https://docs.aws.amazon.com/s3/)                                                                      |
+| 4   | Làm lab IAM Permission Boundary: thực hành giới hạn quyền tối đa cho IAM user/role. Thiết kế IAM roles least-privilege cho từng Lambda function trong project                                                       | 13/05/2026   | 13/05/2026      | [hLIMITATION OF USER RIGHTS WITH IAM PERMISSION BOUNDARY :: LIMITATION OF USER RIGHTS WITH IAM PERMISSION BOUNDARY](https://000011.awsstudygroup.com/)[AWS Identity and Access Management Documentation](https://docs.aws.amazon.com/iam/) |
+| 5   | Học AWS SAM: `template.yaml` Globals, Lambda execution role. Viết SAM template skeleton: S3 buckets, DynamoDB tables, SQS queues (ScoreQueue + SaveQueue + DLQs), KMS key, SNS topics, Lambda functions placeholder | 14/05/2026   | 14/05/2026      | [AWS Serverless Application Model (AWS SAM) Documentation](https://docs.aws.amazon.com/serverless-application-model/)                                                                                                                       |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+- SAM skeleton deploy thành công: S3, DynamoDB, SQS, SNS, KMS tất cả tạo đúng
+- Hiểu sâu S3 CORS và Presigned URL — kiến thức trực tiếp dùng cho project
 
