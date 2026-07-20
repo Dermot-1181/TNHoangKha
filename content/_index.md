@@ -9,7 +9,7 @@ chapter: false
 # Internship Report
 
 ### Student Information:
-&emsp; **Full Name:** Truong Nguyen Hoang Kha
+&emsp; **Full Name:** Kha Truong Nguyen Hoang
 
 &emsp; **Phone Number:** 0394593178
 
