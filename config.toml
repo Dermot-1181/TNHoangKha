@@ -1,6 +1,6 @@
 baseURL = "https://dermot-1181.github.io/TNHoangKha/"
-relativeURLs = false
-canonifyURLs = false
+relativeURLs = true
+canonifyURLs = true
 defaultContentLanguage = "en"
 
 # Change the default theme to be use when building the site with Hugo
